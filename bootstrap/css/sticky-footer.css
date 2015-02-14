@@ -1,13 +1,11 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -40,13 +38,7 @@ span.glyphicon-user {
     text-align:center;
 }
 
-.row-padding { padding-top:20px; }
-
-/*
-.col-centered {
-    display:inline-block;
-    float:none;
-    text-align:left;
-    margin-right:-4px;
+.row-padding { 
+	padding-top:20px; 
 }
-*/
+
