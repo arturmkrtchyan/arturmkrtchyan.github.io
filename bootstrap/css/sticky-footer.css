@@ -40,7 +40,8 @@ span.glyphicon-user {
     text-align:center;
 }
 
-.row-padding { 
+.map-row { 
 	padding-top:20px; 
+	min-height: 400px;
 }
 
