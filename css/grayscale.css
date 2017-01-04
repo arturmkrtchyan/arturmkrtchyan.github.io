@@ -215,7 +215,7 @@ a:focus {
     transform: scale(1);
   }
 }
-#about .content-section {
+#pricing .content-section {
   padding-top: 100px;
 }
 .download-section {
@@ -228,9 +228,6 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-#about {
-  background: url(../img/pexels-photo-127561.jpeg) no-repeat center center scroll;
 }
 @media (min-width: 767px) {
   .download-section {
@@ -303,7 +300,7 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 .pricing-table {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   /*Pricing Content*/
   /*Pricing Footer*/
   /*Priceing Active*/
