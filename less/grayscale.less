@@ -297,7 +297,10 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
     p {
         margin: 0;
         padding-top: 30px;
@@ -457,8 +460,8 @@ body {
 .signup-form {
 
     .formInput {
-    	margin-bottom: 10px;
-    	width: 350px;
+    	margin-bottom: 6px;
+    	width: 360px;
     	font-size: 14px;
     	height: 42px;
 	    border: 1px solid #E3E3E3;
@@ -468,5 +471,46 @@ body {
 	    line-height: 42px;
     	padding: 0 8px;
     }
+    
+	#radioBtn .notActive{
+    	color: #ccc;
+	    background-color: #fff;
+	    text-transform: none;
+	}
+	
+	#radioBtn .newActive{
+    	color: #000;
+	    background-color: #fff;
+	    text-transform: none;
+	}
+	
+	#radioBtn a {
+		margin-bottom: 6px;
+	    width: 120px;
+    	height: 42px;
+	    border: 1px solid #E3E3E3;
+   		color: #555;
+	    display: inline-block;
+	    font-size: 1em;
+	    line-height: 42px;
+	    padding: 0 8px;
+	}
+	
+	.submit-button {
+		width: 360px;
+	}
+	
+	.btn-default {
+    	border: 1px solid fade(@primary, 90%);
+	    color: black;
+    	background-color: fade(@primary, 90%);
+    	&:hover,
+	    &:focus {
+    	    border: 1px solid @primary;
+	        outline: none;
+    	    color: black;
+	        background-color: @primary;
+    	}
+}
 }
 
