@@ -397,3 +397,19 @@ body {
   color: #FFFFFF;
   background-color: #f3c200;
 }
+.pricing-table .not-supported {
+  text-decoration: line-through;
+  color: #ccc !important;
+}
+.signup-form .formInput {
+  margin-bottom: 10px;
+  width: 350px;
+  font-size: 14px;
+  height: 42px;
+  border: 1px solid #E3E3E3;
+  color: #555;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 42px;
+  padding: 0 8px;
+}
