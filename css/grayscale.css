@@ -406,7 +406,7 @@ body {
 }
 .signup-form .formInput {
   margin-bottom: 6px;
-  width: 360px;
+  width: 300px;
   font-size: 14px;
   height: 42px;
   border: 1px solid #E3E3E3;
@@ -428,17 +428,17 @@ body {
 }
 .signup-form #radioBtn a {
   margin-bottom: 6px;
-  width: 120px;
+  width: 100px;
   height: 42px;
   border: 1px solid #E3E3E3;
   color: #555;
   display: inline-block;
   font-size: 1em;
   line-height: 42px;
-  padding: 0 8px;
+  padding: 0 6px;
 }
 .signup-form .submit-button {
-  width: 360px;
+  width: 300px;
 }
 .signup-form .btn-default {
   border: 1px solid rgba(66, 220, 163, 0.9);
