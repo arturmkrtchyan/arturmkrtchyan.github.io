@@ -27,6 +27,9 @@ $(function() {
     });
 });
 
+
+$(function() {
+
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
@@ -40,3 +43,9 @@ $('#radioBtn a').on('click', function(){
     $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('newActive').addClass('notActive');
     $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('newActive');
 })
+
+$('#signupForm').validator();
+
+
+
+});

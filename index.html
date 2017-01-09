@@ -211,18 +211,18 @@
                     <h2>Stand out from the crowd and get invited</h2>
                 </div>
                 <div class="row">
-                    <form class="signup-form" name="signupForm" action="https://formspree.io/chesco.verdi@gmail.com" method="POST">
+                    <form class="signup-form" name="signupForm" id="signupForm" action="https://formspree.io/chesco.verdi@gmail.com" method="POST">
                     	<input type="hidden" name="_subject" value="New Signup" />
                     	<input type="hidden" name="_format" value="plain" />
                     	<input type="hidden" name="_next" value="http://www.sourcingmonkey.com/confirmation.html" />
-                    	<div class="col-md-12">
-						    <input class="formInput" placeholder="Full name" type="text" name="name">
+                    	<div class="col-md-12 form-group">
+						    <input class="formInput" placeholder="Full name" type="text" name="name" required>
 					    </div>
-                    	<div class="col-md-12">
-						    <input class="formInput" placeholder="Email" type="text" name="email">
+                    	<div class="col-md-12 form-group">
+						    <input class="formInput" placeholder="Email" type="email" name="email" required>
 					    </div>
-                    	<div class="col-md-12">
-						    <input class="formInput" type="text" placeholder="Company" name="company">
+                    	<div class="col-md-12 form-group">
+						    <input class="formInput" type="text" placeholder="Company" name="company" required>
 					    </div>
 					    <div class="col-md-12">
 						    <div>
@@ -261,6 +261,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    
 
 </body>
 
