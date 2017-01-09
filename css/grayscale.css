@@ -139,6 +139,9 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+.intro .intro-body .confirmation-text {
+  font-size: 22px;
+}
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -149,6 +152,9 @@ a:focus {
   }
   .intro .intro-body .intro-text {
     font-size: 18px;
+  }
+  .intro .intro-body .confirmation-text {
+    font-size: 22px;
   }
 }
 .btn-circle {
