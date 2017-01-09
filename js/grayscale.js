@@ -30,22 +30,41 @@ $(function() {
 
 $(function() {
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $(this).closest('.collapse').collapse('toggle');
-});
+	// Closes the Responsive Menu on Menu Item Click
+	$('.navbar-collapse ul li a').click(function() {
+    	$(this).closest('.collapse').collapse('toggle');
+	});
 
-$('#radioBtn a').on('click', function(){
-    var sel = $(this).data('title');
-    var tog = $(this).data('toggle');
-    $('#'+tog).prop('value', sel);
+	$('#radioBtn a').on('click', function(){
+    	var sel = $(this).data('title');
+	    var tog = $(this).data('toggle');
+    	$('#'+tog).prop('value', sel);
     
-    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('newActive').addClass('notActive');
-    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('newActive');
-})
+	    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('newActive').addClass('notActive');
+	    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('newActive');
+	})
 
-$('#signupForm').validator();
-
-
+	$('#signupForm').validator();
 
 });
+
+//////////////// GLOBAL ///////////////////
+var IS_FORM_VALID = false;
+//////////////////////////////////////////
+
+
+function submitForm() {
+	$('#signupForm').validator('validate');
+	$('#signupForm').on('validate.bs.validator', function() {
+		var validator = $(this).data('bs.validator');
+		if (!validator.hasErrors()) {
+	    	IS_FORM_VALID = true;
+		}
+		else {
+			IS_FORM_VALID = false;
+		}
+	});
+	if(IS_FORM_VALID) {
+		document.signupForm.submit();
+	}
+}
